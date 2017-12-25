@@ -1,0 +1,338 @@
+Sampling process 77490 for 3 seconds with 1 millisecond of run time between samples
+Sampling completed, processing symbols...
+Analysis of sampling node (pid 77490) every 1 millisecond
+Process:         node [77490]
+Path:            /usr/local/Cellar/node/9.3.0_1/bin/node
+Load Address:    0x100000000
+Identifier:      node
+Version:         ???
+Code Type:       X86-64
+Parent Process:  node [77480]
+
+Date/Time:       2017-12-26 01:07:25.685 +0800
+Launch Time:     2017-12-26 01:05:52.060 +0800
+OS Version:      Mac OS X 10.13.2 (17C88)
+Report Version:  7
+Analysis Tool:   /usr/bin/sample
+----
+
+Call graph:
+    2671 Thread_19613657   DispatchQueue_1: com.apple.main-thread  (serial)
+    + 2671 start  (in node) + 52  [0x100002934]
+    +   2671 node::Start(int, char**)  (in node) + 515  [0x1007536df]
+    +     2671 node::Start(uv_loop_s*, int, char const* const*, int, char const* const*)  (in node) + 368  [0x100753a69]
+    +       2671 node::Start(v8::Isolate*, node::IsolateData*, int, char const* const*, int, char const* const*)  (in node) + 556  [0x100755f3b]
+    +         2671 uv_run  (in node) + 339  [0x10080c4dc]
+    +           2671 uv__io_poll  (in node) + 1705  [0x10081c088]
+    +             2671 uv__async_io  (in node) + 297  [0x10080c042]
+    +               2671 uv__work_done  (in node) + 173  [0x10080a1b2]
+    +                 2671 node::(anonymous namespace)::After(uv_fs_s*)  (in node) + 423  [0x10077a486]
+    +                   2671 node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)  (in node) + 122  [0x100732260]
+    +                     2671 node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)  (in node) + 178  [0x100749c4f]
+    +                       2671 node::InternalCallbackScope::Close()  (in node) + 402  [0x100749b2e]
+    +                         2671 v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)  (in node) + 307  [0x1001bb29d]
+    +                           2671 v8::internal::(anonymous namespace)::CallInternal(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Execution::MessageHandling)  (in node) + 160  [0x1004135c7]
+    +                             2671 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, bool, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*, v8::internal::Handle<v8::internal::Object>, v8::internal::Execution::MessageHandling)  (in node) + 609  [0x100413887]
+    +                               2671 ???  (in <unknown binary>)  [0x38334a304101]
+    +                                 2671 ???  (in <unknown binary>)  [0x38334a304239]
+    +                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                               2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                           2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                   2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                               2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                           2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                                 2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                                   2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                                     2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                                                       2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                                         2671 ???  (in <unknown binary>)  [0x38334a30535f]
+    +                                                                                                                                                                                                                                                                                                                                                           2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                                             2671 ???  (in <unknown binary>)  [0x38334a3bd1e0]
+    +                                                                                                                                                                                                                                                                                                                                                               2671 ???  (in <unknown binary>)  [0x38334a3042fd]
+    +                                                                                                                                                                                                                                                                                                                                                                 2671 v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*)  (in node) + 259  [0x1002158fa]
+    +                                                                                                                                                                                                                                                                                                                                                                   2671 v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments)  (in node) + 775  [0x1002161e0]
+    +                                                                                                                                                                                                                                                                                                                                                                     2671 v8::internal::FunctionCallbackArguments::Call(void (*)(v8::FunctionCallbackInfo<v8::Value> const&))  (in node) + 430  [0x1001cf7da]
+    +                                                                                                                                                                                                                                                                                                                                                                       2671 node::Exit(v8::FunctionCallbackInfo<v8::Value> const&)  (in node) + 92  [0x10074ecd8]
+    +                                                                                                                                                                                                                                                                                                                                                                         2671 exit  (in libsystem_c.dylib) + 55  [0x7fff745e7362]
+    +                                                                                                                                                                                                                                                                                                                                                                           2671 __cxa_finalize_ranges  (in libsystem_c.dylib) + 351  [0x7fff745e7051]
+    +                                                                                                                                                                                                                                                                                                                                                                             2671 dyld::runAllStaticTerminators(void*)  (in dyld) + 64  [0x10e443613]
+    +                                                                                                                                                                                                                                                                                                                                                                               2671 ImageLoaderMachO::doTermination(ImageLoader::LinkContext const&)  (in dyld) + 259  [0x10e457d8d]
+    +                                                                                                                                                                                                                                                                                                                                                                                 2671 cleanup  (in node) + 60  [0x100809eb8]
+    +                                                                                                                                                                                                                                                                                                                                                                                   2671 uv_thread_join  (in node) + 14  [0x10081749b]
+    +                                                                                                                                                                                                                                                                                                                                                                                     2671 _pthread_join  (in libsystem_pthread.dylib) + 626  [0x7fff747c98ec]
+    +                                                                                                                                                                                                                                                                                                                                                                                       2671 __semwait_signal  (in libsystem_kernel.dylib) + 10  [0x7fff7468a05a]
+    2671 Thread_19613659
+    + 2671 thread_start  (in libsystem_pthread.dylib) + 13  [0x7fff747c4c5d]
+    +   2671 _pthread_start  (in libsystem_pthread.dylib) + 377  [0x7fff747c556d]
+    +     2671 _pthread_body  (in libsystem_pthread.dylib) + 340  [0x7fff747c56c1]
+    +       2671 node::BackgroundRunner(void*)  (in node) + 87  [0x100790969]
+    +         2671 node::TaskQueue<v8::Task>::BlockingPop()  (in node) + 58  [0x100791d80]
+    +           2671 uv_cond_wait  (in node) + 9  [0x1008178a1]
+    +             2671 _pthread_cond_wait  (in libsystem_pthread.dylib) + 732  [0x7fff747c6662]
+    +               2671 __psynch_cvwait  (in libsystem_kernel.dylib) + 10  [0x7fff74689cee]
+    2671 Thread_19613660
+    + 2671 thread_start  (in libsystem_pthread.dylib) + 13  [0x7fff747c4c5d]
+    +   2671 _pthread_start  (in libsystem_pthread.dylib) + 377  [0x7fff747c556d]
+    +     2671 _pthread_body  (in libsystem_pthread.dylib) + 340  [0x7fff747c56c1]
+    +       2671 node::BackgroundRunner(void*)  (in node) + 87  [0x100790969]
+    +         2671 node::TaskQueue<v8::Task>::BlockingPop()  (in node) + 58  [0x100791d80]
+    +           2671 uv_cond_wait  (in node) + 9  [0x1008178a1]
+    +             2671 _pthread_cond_wait  (in libsystem_pthread.dylib) + 732  [0x7fff747c6662]
+    +               2671 __psynch_cvwait  (in libsystem_kernel.dylib) + 10  [0x7fff74689cee]
+    2671 Thread_19613661
+    + 2671 thread_start  (in libsystem_pthread.dylib) + 13  [0x7fff747c4c5d]
+    +   2671 _pthread_start  (in libsystem_pthread.dylib) + 377  [0x7fff747c556d]
+    +     2671 _pthread_body  (in libsystem_pthread.dylib) + 340  [0x7fff747c56c1]
+    +       2671 node::BackgroundRunner(void*)  (in node) + 87  [0x100790969]
+    +         2671 node::TaskQueue<v8::Task>::BlockingPop()  (in node) + 58  [0x100791d80]
+    +           2671 uv_cond_wait  (in node) + 9  [0x1008178a1]
+    +             2671 _pthread_cond_wait  (in libsystem_pthread.dylib) + 732  [0x7fff747c6662]
+    +               2671 __psynch_cvwait  (in libsystem_kernel.dylib) + 10  [0x7fff74689cee]
+    2671 Thread_19613662
+    + 2671 thread_start  (in libsystem_pthread.dylib) + 13  [0x7fff747c4c5d]
+    +   2671 _pthread_start  (in libsystem_pthread.dylib) + 377  [0x7fff747c556d]
+    +     2671 _pthread_body  (in libsystem_pthread.dylib) + 340  [0x7fff747c56c1]
+    +       2671 node::BackgroundRunner(void*)  (in node) + 87  [0x100790969]
+    +         2671 node::TaskQueue<v8::Task>::BlockingPop()  (in node) + 58  [0x100791d80]
+    +           2671 uv_cond_wait  (in node) + 9  [0x1008178a1]
+    +             2671 _pthread_cond_wait  (in libsystem_pthread.dylib) + 732  [0x7fff747c6662]
+    +               2671 __psynch_cvwait  (in libsystem_kernel.dylib) + 10  [0x7fff74689cee]
+    2671 Thread_19613663
+    + 2671 thread_start  (in libsystem_pthread.dylib) + 13  [0x7fff747c4c5d]
+    +   2671 _pthread_start  (in libsystem_pthread.dylib) + 377  [0x7fff747c556d]
+    +     2671 _pthread_body  (in libsystem_pthread.dylib) + 340  [0x7fff747c56c1]
+    +       2671 node::inspector::(anonymous namespace)::StartIoThreadMain(void*)  (in node) + 21  [0x1007c810c]
+    +         2671 uv_sem_wait  (in node) + 16  [0x100817776]
+    +           2671 semaphore_wait_trap  (in libsystem_kernel.dylib) + 10  [0x7fff746807fe]
+    2671 Thread_19613680
+      2671 thread_start  (in libsystem_pthread.dylib) + 13  [0x7fff747c4c5d]
+        2671 _pthread_start  (in libsystem_pthread.dylib) + 377  [0x7fff747c556d]
+          2671 _pthread_body  (in libsystem_pthread.dylib) + 340  [0x7fff747c56c1]
+            2671 worker  (in node) + 90  [0x10080a494]
+              2671 sass_compile_context(Sass_Context*, Sass::Context*)  (in binding.node) + 26  [0x107579bd4]
+                2671 sass_compiler_parse  (in binding.node) + 255  [0x107579e55]
+                  2671 Sass::Data_Context::parse()  (in binding.node) + 707  [0x1074cc2cf]
+                    2671 Sass::Context::register_resource(Sass::Include const&, Sass::Resource const&, Sass::ParserState*)  (in binding.node) + 744  [0x1074c8d50]
+                      2671 Sass::Parser::parse()  (in binding.node) + 323  [0x1075422eb]
+                        2671 Sass::Parser::parse_block_nodes(bool)  (in binding.node) + 188  [0x107542c1c]
+                          2671 Sass::Parser::parse_block_node(bool)  (in binding.node) + 1162  [0x1075442fc]
+                            2671 Sass::Parser::parse_import()  (in binding.node) + 2710  [0x107548dcc]
+                              2671 Sass::Context::call_importers(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char const*, Sass::ParserState&, Sass::Import*)  (in binding.node) + 79  [0x10754e979]
+                                2671 Sass::Context::call_loader(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char const*, Sass::ParserState&, Sass::Import*, std::__1::vector<Sass_Importer*, std::__1::allocator<Sass_Importer*> >, bool)  (in binding.node) + 241  [0x1074ca3e5]
+                                  2671 sass_importer(char const*, Sass_Importer*, Sass_Compiler*)  (in binding.node) + 145  [0x107487f11]
+                                    2671 CallbackBridge<Sass_Import**, void*>::operator()(std::__1::vector<void*, std::__1::allocator<void*> >)  (in binding.node) + 346  [0x1074880d4]
+                                      2671 uv_cond_wait  (in node) + 9  [0x1008178a1]
+                                        2671 _pthread_cond_wait  (in libsystem_pthread.dylib) + 732  [0x7fff747c6662]
+                                          2671 __psynch_cvwait  (in libsystem_kernel.dylib) + 10  [0x7fff74689cee]
+
+Total number in stack (recursive counted multiple, when >=5):
+        103       ???  (in <unknown binary>)  [0x38334a3bd1e0]
+        55       ???  (in <unknown binary>)  [0x38334a30535f]
+        6       _pthread_body  (in libsystem_pthread.dylib) + 340  [0x7fff747c56c1]
+        6       _pthread_start  (in libsystem_pthread.dylib) + 377  [0x7fff747c556d]
+        6       thread_start  (in libsystem_pthread.dylib) + 13  [0x7fff747c4c5d]
+        5       __psynch_cvwait  (in libsystem_kernel.dylib) + 0  [0x7fff74689ce4]
+        5       _pthread_cond_wait  (in libsystem_pthread.dylib) + 732  [0x7fff747c6662]
+        5       uv_cond_wait  (in node) + 9  [0x1008178a1]
+
+Sort by top of stack, same collapsed (when >= 5):
+        __psynch_cvwait  (in libsystem_kernel.dylib)        13355
+        __semwait_signal  (in libsystem_kernel.dylib)        2671
+        semaphore_wait_trap  (in libsystem_kernel.dylib)        2671
+
+Binary Images:
+       0x100000000 -        0x100e39a4f +node (???) <5144A896-46E4-3E5E-8E94-C6556BC19ABD> /usr/local/bin/node
+       0x101a66000 -        0x101bd5ffb +libicui18n.60.dylib (0) <E77ABF20-CB1B-33C3-9461-3D88817286FF> /usr/local/opt/icu4c/lib/libicui18n.60.dylib
+       0x101cc5000 -        0x101dcbfff +libicuuc.60.dylib (0) <09BA8968-5B81-3DFE-A7EF-612A6BBBB776> /usr/local/opt/icu4c/lib/libicuuc.60.dylib
+       0x101e3b000 -        0x1037e3fff +libicudata.60.2.dylib (0) <BBBFF5B7-F3C6-3E80-BC0C-E2355BA523CA> /usr/local/opt/icu4c/lib/libicudata.60.2.dylib
+       0x107487000 -        0x1075eafff +binding.node (???) <EF532B51-2898-3541-A879-C0C3810B26F1> /Users/jh/code/webpack-sass-worker-hang-example/node_modules/node-sass/vendor/darwin-x64-59/binding.node
+       0x10e441000 -        0x10e48b98f  dyld (519.2.2) <6695F30B-4E88-3C0B-9867-7D738C44A3E6> /usr/lib/dyld
+    0x7fff4cc61000 -     0x7fff4d101fff  com.apple.CoreFoundation (6.9 - 1450.16) <23F8373A-FA3F-37A2-BA5B-70061BFCCD21> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+    0x7fff71e23000 -     0x7fff71e56fff  libclosured.dylib (519.2.2) <48051216-5647-3643-B979-B77D0FD20011> /usr/lib/closure/libclosured.dylib
+    0x7fff71fcd000 -     0x7fff71fceff3  libDiagnosticMessagesClient.dylib (104) <9712E980-76EE-3A89-AEA6-DF4BAF5C0574> /usr/lib/libDiagnosticMessagesClient.dylib
+    0x7fff72335000 -     0x7fff72336ff3  libSystem.B.dylib (1252) <5EDEEA85-0387-31EE-9D9B-DA1B75E7AEF3> /usr/lib/libSystem.B.dylib
+    0x7fff72569000 -     0x7fff725bffff  libc++.1.dylib (400.9) <FCF5E1F6-2B04-3545-8004-F3AB32FED172> /usr/lib/libc++.1.dylib
+    0x7fff725c0000 -     0x7fff725e4ff7  libc++abi.dylib (400.7) <217656D5-BC40-37FF-B322-91CB2AAD4F34> /usr/lib/libc++abi.dylib
+    0x7fff73092000 -     0x7fff732b9ffb  libicucore.A.dylib (59152.0.1) <281C39FD-0C9A-3EB2-A407-36D4CCE938E5> /usr/lib/libicucore.A.dylib
+    0x7fff73936000 -     0x7fff73d247e7  libobjc.A.dylib (723) <93A92316-DE1E-378C-8891-99720B50D075> /usr/lib/libobjc.A.dylib
+    0x7fff74321000 -     0x7fff74333ffb  libz.1.dylib (70) <48C67CFC-940D-3857-8DAD-857774605352> /usr/lib/libz.1.dylib
+    0x7fff743d1000 -     0x7fff743d5ff7  libcache.dylib (80) <354F3B7D-404E-3398-9EBF-65CA2CE65211> /usr/lib/system/libcache.dylib
+    0x7fff743d6000 -     0x7fff743e0ff3  libcommonCrypto.dylib (60118.30.2) <674286D3-7744-36A3-9AAA-49DFCD97A986> /usr/lib/system/libcommonCrypto.dylib
+    0x7fff743e1000 -     0x7fff743e8fff  libcompiler_rt.dylib (62) <4487CFBA-A5D7-3282-9E6B-94CAD7BE507E> /usr/lib/system/libcompiler_rt.dylib
+    0x7fff743e9000 -     0x7fff743f1ffb  libcopyfile.dylib (146.30.2) <2C7C67D7-562B-3FFA-973D-BACF4C10E1EC> /usr/lib/system/libcopyfile.dylib
+    0x7fff743f2000 -     0x7fff74477fff  libcorecrypto.dylib (562.30.10) <8A53EFE1-AFCA-3676-BEE1-FA5ED9F0E222> /usr/lib/system/libcorecrypto.dylib
+    0x7fff744ff000 -     0x7fff74538ff7  libdispatch.dylib (913.30.4) <7D0E3183-282B-3FEE-A734-2C0ADC092084> /usr/lib/system/libdispatch.dylib
+    0x7fff74539000 -     0x7fff74556ff7  libdyld.dylib (519.2.2) <C50D02BC-A333-3313-B787-02F255A6783F> /usr/lib/system/libdyld.dylib
+    0x7fff74557000 -     0x7fff74557ffb  libkeymgr.dylib (28) <6D84A96F-C65B-38EC-BDB5-21FD2C97E7B2> /usr/lib/system/libkeymgr.dylib
+    0x7fff74565000 -     0x7fff74565ff7  liblaunch.dylib (1205.30.29) <E66F58ED-C15E-3DFB-BC22-A861E13918C6> /usr/lib/system/liblaunch.dylib
+    0x7fff74566000 -     0x7fff7456affb  libmacho.dylib (900.0.1) <756F2553-07B6-3B42-ACEA-2F0F1A5E8D0F> /usr/lib/system/libmacho.dylib
+    0x7fff7456b000 -     0x7fff7456dff3  libquarantine.dylib (86) <6AC8773F-3817-3D82-99C2-01BABB9C3CBB> /usr/lib/system/libquarantine.dylib
+    0x7fff7456e000 -     0x7fff7456fff3  libremovefile.dylib (45) <912FA211-DD8C-3C92-8424-21B89F8B10FD> /usr/lib/system/libremovefile.dylib
+    0x7fff74570000 -     0x7fff74587fff  libsystem_asl.dylib (356.1.1) <94972913-9DF0-3C78-847C-43E58919E3DA> /usr/lib/system/libsystem_asl.dylib
+    0x7fff74588000 -     0x7fff74588fff  libsystem_blocks.dylib (67) <F2493BB5-B1C6-3C4D-9F1F-1B402E0F1DB7> /usr/lib/system/libsystem_blocks.dylib
+    0x7fff74589000 -     0x7fff74612ff7  libsystem_c.dylib (1244.30.3) <E0136C71-0648-36F0-9F84-82EA2748A8D7> /usr/lib/system/libsystem_c.dylib
+    0x7fff74613000 -     0x7fff74616ffb  libsystem_configuration.dylib (963.30.1) <0F8D0B76-4F7D-34EC-AB6C-50F9465809DA> /usr/lib/system/libsystem_configuration.dylib
+    0x7fff74617000 -     0x7fff7461affb  libsystem_coreservices.dylib (51) <21A488D0-2D07-344E-8631-CC8B2A246F35> /usr/lib/system/libsystem_coreservices.dylib
+    0x7fff7461b000 -     0x7fff7461cfff  libsystem_darwin.dylib (1244.30.3) <2F750CB1-BC26-3FA3-AE59-553EE30D451B> /usr/lib/system/libsystem_darwin.dylib
+    0x7fff7461d000 -     0x7fff74623ff7  libsystem_dnssd.dylib (878.30.4) <EB9BB165-45A4-367C-B33A-688D4F383A95> /usr/lib/system/libsystem_dnssd.dylib
+    0x7fff74624000 -     0x7fff7466dff7  libsystem_info.dylib (517.30.1) <7D79E167-4B5C-3833-81EE-3AF3FB53616D> /usr/lib/system/libsystem_info.dylib
+    0x7fff7466e000 -     0x7fff74693ff7  libsystem_kernel.dylib (4570.31.3) <D2E842AA-3B8D-31BF-8234-8C1BE11CFE32> /usr/lib/system/libsystem_kernel.dylib
+    0x7fff74694000 -     0x7fff746dffcb  libsystem_m.dylib (3146) <ABB1B85F-9FFE-31B8-AD4F-E39A30794A93> /usr/lib/system/libsystem_m.dylib
+    0x7fff746e0000 -     0x7fff746fffff  libsystem_malloc.dylib (140.1.1) <9F0745FF-B92F-330D-8812-BB74001D1D33> /usr/lib/system/libsystem_malloc.dylib
+    0x7fff74700000 -     0x7fff747a4ff3  libsystem_network.dylib (1229.30.11) <40BAD301-8744-3AD8-A688-E7925C587B00> /usr/lib/system/libsystem_network.dylib
+    0x7fff747a5000 -     0x7fff747afffb  libsystem_networkextension.dylib (767.30.7) <C5ED4BAB-2480-369D-8AB6-DFB37C15A1EE> /usr/lib/system/libsystem_networkextension.dylib
+    0x7fff747b0000 -     0x7fff747b9ff3  libsystem_notify.dylib (172) <98EA3D62-7C86-30DE-8261-D020D2F1EFF3> /usr/lib/system/libsystem_notify.dylib
+    0x7fff747ba000 -     0x7fff747c1ff7  libsystem_platform.dylib (161.20.1) <C049250F-8C35-314D-810F-4E28AEAED983> /usr/lib/system/libsystem_platform.dylib
+    0x7fff747c2000 -     0x7fff747cdfff  libsystem_pthread.dylib (301.30.1) <ABA848E1-6978-3B42-A3A7-608B2C36FA93> /usr/lib/system/libsystem_pthread.dylib
+    0x7fff747ce000 -     0x7fff747d1ff3  libsystem_sandbox.dylib (765.30.4) <A51828BA-26D8-3205-AF3A-DF5C37269468> /usr/lib/system/libsystem_sandbox.dylib
+    0x7fff747d2000 -     0x7fff747d3ff3  libsystem_secinit.dylib (30) <F06ADB8F-9E94-34A7-B3C9-2C22FDD14BAD> /usr/lib/system/libsystem_secinit.dylib
+    0x7fff747d4000 -     0x7fff747dbff7  libsystem_symptoms.dylib (820.30.7) <DC3586C2-AA56-3419-88D3-FC0DBF08E3C0> /usr/lib/system/libsystem_symptoms.dylib
+    0x7fff747dc000 -     0x7fff747efff7  libsystem_trace.dylib (829.30.14) <69EBF017-D40F-30D7-9B0B-BFC862D761A5> /usr/lib/system/libsystem_trace.dylib
+    0x7fff747f1000 -     0x7fff747f6ff7  libunwind.dylib (35.3) <6D4FCD49-D2A9-3233-95C7-A7635CE265F2> /usr/lib/system/libunwind.dylib
+    0x7fff747f7000 -     0x7fff74823ff7  libxpc.dylib (1205.30.29) <F7E5F1BC-614B-39CB-B6CE-92A9C7B7EC0B> /usr/lib/system/libxpc.dylib
+Sample analysis of process 77490 written to file /dev/stdout
