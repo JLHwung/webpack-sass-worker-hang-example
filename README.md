@@ -9,3 +9,5 @@ See the project files for the brief construction ideas of this example.
 npm test
 ```
 `webpack` will hang. The sample of the `node` process can be found in [sample.log](sample.log)
+
+See also the [build status](https://travis-ci.org/JLHwung/webpack-sass-worker-hang-example) which reproduces the hang on travis.
